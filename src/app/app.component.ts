@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, TemplateRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-merittrac-root',
@@ -9,6 +9,11 @@ export class AppComponent {
   title = 'ng-ant-ui';
 
   isCollapsed = false;
-  isReverseArrow = false;
-  width = 200;
+  triggerTemplate: TemplateRef<void> | null = null;
+  @ViewChild('trigger') customTrigger: TemplateRef<void>;
+
+  /** custom trigger can be TemplateRef **/
+  changeTrigger(): void {
+    this.triggerTemplate = this.customTrigger;
+  }
 }
