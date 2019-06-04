@@ -1,35 +1,45 @@
 <!-- NG-ZORRO -->
 <div class="wrapper-container">
-    <h3>ng-ant-Grid</h3>
+    <h3>ng-ant-Layout</h3>
+    <br>
+    <h3>Layout-1</h3>
+    <nz-layout>
+        <nz-header>Header</nz-header>
+        <nz-content>Content</nz-content>
+        <nz-footer>Footer</nz-footer>
+    </nz-layout>
 
-    <div style="margin-bottom:16px;">
-        <span style="margin-right: 6px;">Gutter (px): </span>
-        <div style="width: 50%">
-          <nz-slider
-            [nzMarks]="marksGutter"
-            [nzStep]="null"
-            [nzDefaultValue]="16"
-            [nzMax]="48"
-            [(ngModel)]="gutter"
-          ></nz-slider>
-        </div>
-        <span style="margin-right: 6px;">Column Count:</span>
-        <div style="width: 50%">
-          <nz-slider
-            [nzMarks]="marksCount"
-            [nzStep]="null"
-            [nzDefaultValue]="4"
-            [nzMax]="12"
-            [(ngModel)]="count"
-          ></nz-slider>
-        </div>
-      </div>
-  
-      <div class="gutter-example">
-        <div nz-row [nzGutter]="gutter">
-          <div nz-col class="gutter-row" [nzSpan]="24 / count" *ngFor="let i of generateArray(count)">
-            <div class="grid-config">Column</div>
-          </div>
-        </div>
-      </div>
+    <hr>
+
+    <h3>Layout-2</h3>
+    <nz-layout>
+        <nz-header>Header</nz-header>
+        <nz-layout>
+          <nz-sider>Sider</nz-sider>
+          <nz-content>Content</nz-content>
+        </nz-layout>
+        <nz-footer>Footer</nz-footer>
+      </nz-layout>
+
+      <hr>
+      <h3>Layout-3</h3>
+      <nz-layout>
+          <nz-header>Header</nz-header>
+          <nz-layout>
+            <nz-content>Content</nz-content>
+            <nz-sider>Sider</nz-sider>
+          </nz-layout>
+          <nz-footer>Footer</nz-footer>
+      </nz-layout>
+
+      <hr>
+      <h3>Layout-4</h3>
+      <nz-layout>
+          <nz-sider>Sider</nz-sider>
+          <nz-layout>
+            <nz-header>Header</nz-header>
+            <nz-content>Content</nz-content>
+            <nz-footer>Footer</nz-footer>
+          </nz-layout>
+        </nz-layout>
 </div>
