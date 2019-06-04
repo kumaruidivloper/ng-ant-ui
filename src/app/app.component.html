@@ -1,45 +1,23 @@
 <!-- NG-ZORRO -->
 <div class="wrapper-container">
-    <h3>ng-ant-Layout</h3>
-    <br>
-    <h3>Layout-1</h3>
-    <nz-layout>
-        <nz-header>Header</nz-header>
-        <nz-content>Content</nz-content>
-        <nz-footer>Footer</nz-footer>
-    </nz-layout>
-
-    <hr>
-
-    <h3>Layout-2</h3>
-    <nz-layout>
-        <nz-header>Header</nz-header>
-        <nz-layout>
-          <nz-sider>Sider</nz-sider>
-          <nz-content>Content</nz-content>
-        </nz-layout>
-        <nz-footer>Footer</nz-footer>
+    <h3>ng-ant-Layout-Type-2</h3>
+    <nz-layout class="layout">
+        <nz-header>
+          <div class="logo"></div>
+          <ul nz-menu [nzTheme]="'dark'" [nzMode]="'horizontal'" style="line-height: 64px;">
+            <li nz-menu-item>nav 1</li>
+            <li nz-menu-item>nav 2</li>
+            <li nz-menu-item>nav 3</li>
+          </ul>
+        </nz-header>
+        <nz-content style="padding:0 50px;">
+          <nz-breadcrumb style="margin:16px 0;">
+            <nz-breadcrumb-item>Home</nz-breadcrumb-item>
+            <nz-breadcrumb-item>List</nz-breadcrumb-item>
+            <nz-breadcrumb-item>App</nz-breadcrumb-item>
+          </nz-breadcrumb>
+          <div style="background:#fff; padding: 24px; min-height: 280px;">Content</div>
+        </nz-content>
+        <nz-footer style="text-align: center;">Ant Design ©2019 Implement By Angular</nz-footer>
       </nz-layout>
-
-      <hr>
-      <h3>Layout-3</h3>
-      <nz-layout>
-          <nz-header>Header</nz-header>
-          <nz-layout>
-            <nz-content>Content</nz-content>
-            <nz-sider>Sider</nz-sider>
-          </nz-layout>
-          <nz-footer>Footer</nz-footer>
-      </nz-layout>
-
-      <hr>
-      <h3>Layout-4</h3>
-      <nz-layout>
-          <nz-sider>Sider</nz-sider>
-          <nz-layout>
-            <nz-header>Header</nz-header>
-            <nz-content>Content</nz-content>
-            <nz-footer>Footer</nz-footer>
-          </nz-layout>
-        </nz-layout>
 </div>
