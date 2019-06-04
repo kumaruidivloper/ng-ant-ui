@@ -8,27 +8,9 @@ div.wrapper-container {
     padding: 8px;
 }
 
-nz-button-group [nz-button] {
-    margin-right: 0;
-  }
-
-
-div.parentDiv h4 {
-    margin: 16px 0;
-    font-size: 14px;
-    line-height: 1;
-    font-weight: normal;
-  }
-
-  div.parentDiv h4:first-child {
-    margin-top: 0;
-  }
-
-  div.parentDiv [nz-button] {
-    margin-bottom: 12px;
-  }
-
-  div.parentDiv nz-button-group {
-    margin-bottom: 8px;
-    margin-right: 8px;
-  }
+.grid-config {
+background: #00a0e9;
+height: 120px;
+line-height: 120px;
+font-size: 13px;
+}
