@@ -1,52 +1,41 @@
 <!-- NG-ZORRO -->
 <div class="wrapper-container">
-    <h3>ng-ant-Layout-Type-5</h3>
+    <h3>ng-ant-Layout-Type-6</h3>
     <nz-layout>
-        <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed" [nzTrigger]="triggerTemplate">
+        <nz-sider
+          nzCollapsible
+          [(nzCollapsed)]="isCollapsed"
+          [nzBreakpoint]="'lg'"
+          [nzCollapsedWidth]="0"
+          [nzZeroTrigger]="zeroTrigger"
+        >
           <div class="logo"></div>
           <ul nz-menu [nzTheme]="'dark'" [nzMode]="'inline'" [nzInlineCollapsed]="isCollapsed">
-            <li nz-submenu>
-              <span title><i nz-icon type="user"></i><span class="nav-text">User</span></span>
-              <ul>
-                <li nz-menu-item>Tom</li>
-                <li nz-menu-item>Bill</li>
-                <li nz-menu-item>Alex</li>
-              </ul>
-            </li>
-            <li nz-submenu>
-              <span title><i nz-icon type="team"></i><span class="nav-text">Team</span></span>
-              <ul>
-                <li nz-menu-item>Team 1</li>
-                <li nz-menu-item>Team 2</li>
-              </ul>
+            <li nz-menu-item>
+              <span><i nz-icon type="user"></i><span class="nav-text">nav 1</span></span>
             </li>
             <li nz-menu-item>
-              <span><i nz-icon type="file"></i><span class="nav-text">File</span></span>
+              <span><i nz-icon type="video-camera"></i><span class="nav-text">nav 2</span></span>
+            </li>
+            <li nz-menu-item>
+              <span><i nz-icon type="upload"></i><span class="nav-text">nav 3</span></span>
+            </li>
+            <li nz-menu-item>
+              <span><i nz-icon type="user"></i><span class="nav-text">nav 4</span></span>
             </li>
           </ul>
         </nz-sider>
         <nz-layout>
-          <nz-header style="background: #fff; padding:0;">
-            <i
-              class="trigger"
-              nz-icon
-              [type]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
-              (click)="isCollapsed = !isCollapsed"
-            ></i>
-          </nz-header>
-          <nz-content style="margin:0 16px;">
-            <nz-breadcrumb style="margin:16px 0;">
-              <nz-breadcrumb-item>User</nz-breadcrumb-item>
-              <nz-breadcrumb-item>Bill</nz-breadcrumb-item>
-            </nz-breadcrumb>
+          <nz-header style="background: #fff; padding:0;"></nz-header>
+          <nz-content style="margin:24px 16px 0;">
             <div style="padding:24px; background: #fff; min-height: 360px;">
-              Bill is a cat.
+              Content
             </div>
           </nz-content>
           <nz-footer style="text-align: center;">Ant Design ©2019 Implement By Angular</nz-footer>
         </nz-layout>
       </nz-layout>
-      <ng-template #trigger>
-        <i nz-icon type="up"></i>
+      <ng-template #zeroTrigger>
+        <i nz-icon type="menu-fold" theme="outline"></i>
       </ng-template>
 </div>
