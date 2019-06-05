@@ -1,213 +1,387 @@
 <!-- NG-ZORRO -->
 <div class="wrapper-container">
-    <h3>ng-ant-Dropdown</h3>
-    <h3>Dropdown Type-1</h3>
-    <nz-dropdown>
-      <a nz-dropdown> Hover me <i nz-icon type="down"></i> </a>
-      <ul nz-menu nzSelectable>
-        <li nz-menu-item>
-          <a>1st menu item</a>
-        </li>
-        <li nz-menu-item>
-          <a>2nd menu item</a>
-        </li>
-        <li nz-menu-item>
-          <a>3rd menu item</a>
-        </li>
-      </ul>
-    </nz-dropdown>
-    <hr>
-    <h3>Dropdown Type-2</h3>
-    <div>
-      <nz-dropdown [nzPlacement]="'bottomLeft'">
-        <button nz-button nz-dropdown>bottomLeft</button>
-        <ul nz-menu>
-          <li nz-menu-item>
-            <a>1st menu item length</a>
-          </li>
-          <li nz-menu-item>
-            <a>2nd menu item length</a>
-          </li>
-          <li nz-menu-item>
-            <a>3rd menu item length</a>
-          </li>
-        </ul>
-      </nz-dropdown>
-      <nz-dropdown [nzPlacement]="'bottomCenter'">
-        <button nz-button nz-dropdown>bottomCenter</button>
-        <ul nz-menu>
-          <li nz-menu-item>
-            <a>1st menu item length</a>
-          </li>
-          <li nz-menu-item>
-            <a>2nd menu item length</a>
-          </li>
-          <li nz-menu-item>
-            <a>3rd menu item length</a>
-          </li>
-        </ul>
-      </nz-dropdown>
-      <nz-dropdown [nzPlacement]="'bottomRight'">
-        <button nz-button nz-dropdown>bottomRight</button>
-        <ul nz-menu>
-          <li nz-menu-item>
-            <a>1st menu item length</a>
-          </li>
-          <li nz-menu-item>
-            <a>2nd menu item length</a>
-          </li>
-          <li nz-menu-item>
-            <a>3rd menu item length</a>
-          </li>
-        </ul>
-      </nz-dropdown>
-      <nz-dropdown [nzPlacement]="'topLeft'">
-        <button nz-button nz-dropdown>topLeft</button>
-        <ul nz-menu>
-          <li nz-menu-item>
-            <a>1st menu item length</a>
-          </li>
-          <li nz-menu-item>
-            <a>2nd menu item length</a>
-          </li>
-          <li nz-menu-item>
-            <a>3rd menu item length</a>
-          </li>
-        </ul>
-      </nz-dropdown>
-      <nz-dropdown [nzPlacement]="'topCenter'">
-        <button nz-button nz-dropdown>topCenter</button>
-        <ul nz-menu>
-          <li nz-menu-item>
-            <a>1st menu item length</a>
-          </li>
-          <li nz-menu-item>
-            <a>2nd menu item length</a>
-          </li>
-          <li nz-menu-item>
-            <a>3rd menu item length</a>
-          </li>
-        </ul>
-      </nz-dropdown>
-      <nz-dropdown [nzPlacement]="'topRight'">
-        <button nz-button nz-dropdown>topRight</button>
-        <ul nz-menu>
-          <li nz-menu-item>
-            <a>1st menu item length</a>
-          </li>
-          <li nz-menu-item>
-            <a>2nd menu item length</a>
-          </li>
-          <li nz-menu-item>
-            <a>3rd menu item length</a>
-          </li>
-        </ul>
-      </nz-dropdown>
-    </div>
-    <hr>
-    <h3>Dropdown Type-3</h3>
-    <nz-dropdown>
-      <a nz-dropdown> Hover me <i nz-icon type="down"></i> </a>
-      <ul nz-menu>
-        <li nz-menu-item>
-          <a>1st menu item</a>
-        </li>
-        <li nz-menu-item>
-          <a>2nd menu item</a>
-        </li>
-        <li nz-menu-divider></li>
-        <li nz-menu-item nzDisabled>3rd menu item（disabled）</li>
-      </ul>
-    </nz-dropdown>
-    <hr>
-    <h3>Dropdown Type-4</h3>
-    <nz-dropdown [nzTrigger]="'click'">
-      <a nz-dropdown> Click me <i nz-icon type="down"></i> </a>
-      <ul nz-menu>
-        <li nz-menu-item>1st menu item</li>
-        <li nz-menu-item>2nd menu item</li>
-        <li nz-menu-divider></li>
-        <li nz-menu-item nzDisabled>disabled menu item</li>
-        <li nz-submenu>
-          <span title>sub menu</span>
-          <ul>
-            <li nz-menu-item>3rd menu item</li>
-            <li nz-menu-item>4th menu item</li>
-          </ul>
-        </li>
-        <li nz-submenu nzDisabled>
-          <span title>disabled sub menu</span>
-          <ul>
-            <li nz-menu-item>3rd menu item</li>
-            <li nz-menu-item>4th menu item</li>
-          </ul>
-        </li>
-      </ul>
-    </nz-dropdown>
-    <hr>
-    <h3>Dropdown Type-5</h3>
-    <nz-dropdown>
-      <a nz-dropdown> Hover me, Click menu item <i nz-icon type="down"></i> </a>
-      <ul nz-menu>
-        <li nz-menu-item (click)="log('1st menu item')">1st menu item</li>
-        <li nz-menu-item (click)="log('2nd menu item')">2nd menu item</li>
-        <li nz-menu-item (click)="log('3rd menu item')">3rd menu item</li>
-      </ul>
-    </nz-dropdown>
-    <hr>
-    <h3>Dropdown Type-6</h3>
-    <div style="height: 28px;">
-      <nz-dropdown-button (nzClick)="log()">
-        DropDown
-        <ul nz-menu>
-          <li nz-menu-item>1st menu item</li>
-          <li nz-menu-item>2nd menu item</li>
-          <li nz-submenu>
-            <span title>sub menu</span>
+    <h3>ng-ant-Menu</h3>
+    <h3>Menu-Type-1</h3>
+    <ul nz-menu [nzMode]="'horizontal'">
+      <li nz-menu-item><i nz-icon type="mail"></i> Navigation One</li>
+      <li nz-menu-item nzDisabled><i nz-icon type="appstore"></i> Navigation Two</li>
+      <li nz-submenu>
+        <span title><i nz-icon type="setting"></i> Navigation Three - Submenu</span>
+        <ul>
+          <li nz-menu-group>
+            <span title>Item 1</span>
             <ul>
-              <li nz-menu-item>3rd menu item</li>
-              <li nz-menu-item>4th menu item</li>
+              <li nz-menu-item>Option 1</li>
+              <li nz-menu-item>Option 2</li>
+            </ul>
+          </li>
+          <li nz-menu-group>
+            <span title>Item 2</span>
+            <ul>
+              <li nz-menu-item>Option 3</li>
+              <li nz-menu-item>Option 4</li>
+              <li nz-submenu>
+                <span title>Sub Menu</span>
+                <ul>
+                  <li nz-menu-item nzDisabled>Option 5</li>
+                  <li nz-menu-item>Option 6</li>
+                </ul>
+              </li>
+              <li nz-submenu nzDisabled>
+                <span title>Disabled Sub Menu</span>
+                <ul>
+                  <li nz-menu-item>Option 5</li>
+                  <li nz-menu-item>Option 6</li>
+                </ul>
+              </li>
             </ul>
           </li>
         </ul>
-      </nz-dropdown-button>
-      <nz-dropdown-button nzDisabled>
-        DropDown
-        <ul nz-menu>
-          <li nz-menu-item>
-            <a>1st menu item</a>
-          </li>
-          <li nz-menu-item>
-            <a>2nd menu item</a>
-          </li>
-          <li nz-menu-item>
-            <a>3rd menu item</a>
-          </li>
-        </ul>
-      </nz-dropdown-button>
-      <nz-dropdown>
-        <button nz-button nz-dropdown><span>Button</span> <i nz-icon type="down"></i></button>
-        <ul nz-menu>
-          <li nz-menu-item>
-            <a>1st menu item</a>
-          </li>
-          <li nz-menu-item>
-            <a>2nd menu item</a>
-          </li>
-          <li nz-menu-item>
-            <a>3rd menu item</a>
-          </li>
-        </ul>
-      </nz-dropdown>
-    </div>
+      </li>
+      <li nz-menu-item>
+        <a href="https://ng.ant.design" target="_blank" rel="noopener noreferrer">Navigation Four - Link</a>
+      </li>
+    </ul>
+    <br>
     <hr>
-    <h3>Dropdown Type-7</h3>
-    <nz-dropdown [nzClickHide]="false" [(nzVisible)]="visible">
-      <a nz-dropdown> Hover me <i nz-icon type="down"></i> </a>
-      <ul nz-menu>
-        <li nz-menu-item>Clicking me will not close the menu.</li>
-        <li nz-menu-item>Clicking me will not close the menu also.</li>
-        <li nz-menu-item (click)="visible = false">Clicking me will close the menu</li>
+    <br>
+    <h3>Menu-Type-2</h3>
+    <ul nz-menu [nzMode]="'inline'" style="width: 240px;">
+      <li nz-submenu>
+        <span title><i nz-icon type="mail"></i> Navigation One</span>
+        <ul>
+          <li nz-menu-group>
+            <span title>Item 1</span>
+            <ul>
+              <li nz-menu-item>Option 1</li>
+              <li nz-menu-item>Option 2</li>
+            </ul>
+          </li>
+          <li nz-menu-group>
+            <span title>Item 2</span>
+            <ul>
+              <li nz-menu-item>Option 3</li>
+              <li nz-menu-item>Option 4</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu>
+        <span title><i nz-icon type="appstore"></i> Navigation Two</span>
+        <ul>
+          <li nz-menu-item>Option 5</li>
+          <li nz-menu-item>Option 6</li>
+          <li nz-submenu>
+            <span title>Submenu</span>
+            <ul>
+              <li nz-menu-item>Option 7</li>
+              <li nz-menu-item>Option 8</li>
+              <li nz-submenu>
+                <span title>Submenu</span>
+                <ul>
+                  <li nz-menu-item>Option 9</li>
+                  <li nz-menu-item>Option 10</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu>
+        <span title><i nz-icon type="setting"></i> Navigation Three</span>
+        <ul>
+          <li nz-menu-item>Option 11</li>
+          <li nz-menu-item>Option 12</li>
+          <li nz-menu-item>Option 13</li>
+        </ul>
+      </li>
+    </ul>
+    <br>
+    <hr>
+    <br>
+    <h3>Menu-Type-3</h3>
+    <div style="width: 240px;">
+      <button nz-button [nzType]="'primary'" (click)="toggleCollapsed()" style="margin-bottom: 10px;">
+        <i nz-icon [type]="isCollapsed ? 'menu-unfold' : 'menu-fold'"></i>
+      </button>
+      <ul nz-menu [nzMode]="'inline'" nzTheme="dark" [nzInlineCollapsed]="isCollapsed">
+        <li nz-menu-item nz-tooltip nzPlacement="right" [nzTitle]="isCollapsed ? 'Navigation One' : ''">
+          <span title>
+            <i nz-icon type="mail"></i>
+            <span>Navigation One</span>
+          </span>
+        </li>
+        <li nz-submenu>
+          <span title>
+            <i nz-icon type="appstore"></i>
+            <span>Navigation Two</span>
+          </span>
+          <ul>
+            <li nz-menu-item>Option 5</li>
+            <li nz-menu-item>Option 6</li>
+            <li nz-submenu>
+              <span title>Submenu</span>
+              <ul>
+                <li nz-menu-item>Option 7</li>
+                <li nz-menu-item>Option 8</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li nz-submenu>
+          <span title>
+            <i nz-icon type="setting"></i>
+            <span>Navigation Three</span>
+          </span>
+          <ul>
+            <li nz-menu-item>Option 9</li>
+            <li nz-menu-item>Option 10</li>
+            <li nz-menu-item>Option 11</li>
+          </ul>
+        </li>
       </ul>
-    </nz-dropdown>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h3>Menu-Type-4</h3>
+    <ul nz-menu [nzMode]="'inline'" style="width: 240px;">
+      <li nz-submenu [(nzOpen)]="openMap.sub1" (nzOpenChange)="openHandler('sub1')">
+        <span title><i nz-icon type="mail"></i> Navigation One</span>
+        <ul>
+          <li nz-menu-group>
+            <span title>Item 1</span>
+            <ul>
+              <li nz-menu-item>Option 1</li>
+              <li nz-menu-item>Option 2</li>
+            </ul>
+          </li>
+          <li nz-menu-group>
+            <span title>Item 2</span>
+            <ul>
+              <li nz-menu-item>Option 3</li>
+              <li nz-menu-item>Option 4</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu [(nzOpen)]="openMap.sub2" (nzOpenChange)="openHandler('sub2')">
+        <span title><i nz-icon type="appstore"></i> Navigation Two</span>
+        <ul>
+          <li nz-menu-item>Option 5</li>
+          <li nz-menu-item>Option 6</li>
+          <li nz-submenu>
+            <span title>Submenu</span>
+            <ul>
+              <li nz-menu-item>Option 7</li>
+              <li nz-menu-item>Option 8</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu [(nzOpen)]="openMap.sub3" (nzOpenChange)="openHandler('sub3')">
+        <span title><i nz-icon type="setting"></i> Navigation Three</span>
+        <ul>
+          <li nz-menu-item>Option 9</li>
+          <li nz-menu-item>Option 10</li>
+          <li nz-menu-item>Option 11</li>
+        </ul>
+      </li>
+    </ul>
+    <br>
+    <hr>
+    <br>
+    <h3>Menu-Type-5</h3>
+    <ul nz-menu [nzMode]="'vertical'" style="width: 240px;">
+      <li nz-submenu>
+        <span title><i nz-icon type="mail"></i> Navigation One</span>
+        <ul>
+          <li nz-menu-group>
+            <span title>Item 1</span>
+            <ul>
+              <li nz-menu-item>Option 1</li>
+              <li nz-menu-item>Option 2</li>
+            </ul>
+          </li>
+          <li nz-menu-group>
+            <span title>Item 2</span>
+            <ul>
+              <li nz-menu-item>Option 3</li>
+              <li nz-menu-item>Option 4</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu (nzOpenChange)="change($event)">
+        <span title><i nz-icon type="appstore"></i> Navigation Two</span>
+        <ul>
+          <li nz-menu-item>Option 5</li>
+          <li nz-menu-item>Option 6</li>
+          <li nz-submenu>
+            <span title>Submenu</span>
+            <ul>
+              <li nz-menu-item>Option 7</li>
+              <li nz-menu-item>Option 8</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu>
+        <span title><i nz-icon type="setting"></i> Navigation Three</span>
+        <ul>
+          <li nz-menu-item>Option 9</li>
+          <li nz-menu-item>Option 10</li>
+          <li nz-menu-item>Option 11</li>
+        </ul>
+      </li>
+    </ul>
+    <br>
+    <hr>
+    <br>
+    <h3>Menu-Type-6</h3>
+    <nz-switch [(ngModel)]="theme">
+      <span checked>Dark</span>
+      <span unchecked>Light</span>
+    </nz-switch>
+    Theme Toggle
+    <br />
+    <br />
+    <ul nz-menu [nzMode]="'inline'" style="width: 240px;" [nzTheme]="theme ? 'dark' : 'light'">
+      <li nz-submenu nzOpen>
+        <span title><i nz-icon type="mail"></i> Navigation One</span>
+        <ul>
+          <li nz-menu-group>
+            <span title>Item 1</span>
+            <ul>
+              <li nz-menu-item>Option 1</li>
+              <li nz-menu-item>Option 2</li>
+            </ul>
+          </li>
+          <li nz-menu-group>
+            <span title>Item 2</span>
+            <ul>
+              <li nz-menu-item>Option 3</li>
+              <li nz-menu-item>Option 4</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu>
+        <span title><i nz-icon type="appstore"></i> Navigation Two</span>
+        <ul>
+          <li nz-menu-item>Option 5</li>
+          <li nz-menu-item>Option 6</li>
+          <li nz-submenu>
+            <span title>Submenu</span>
+            <ul>
+              <li nz-menu-item>Option 7</li>
+              <li nz-menu-item>Option 8</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu>
+        <span title><i nz-icon type="setting"></i> Navigation Three</span>
+        <ul>
+          <li nz-menu-item>Option 9</li>
+          <li nz-menu-item>Option 10</li>
+          <li nz-menu-item>Option 11</li>
+        </ul>
+      </li>
+    </ul>
+
+    <br>
+    <hr>
+    <br>
+    <h3>Menu-Type-7</h3>
+    <nz-switch [(ngModel)]="mode"> </nz-switch>
+    Change Mode
+    <nz-divider nzType="vertical"></nz-divider>
+    <nz-switch [(ngModel)]="dark"> </nz-switch>
+    Change Theme
+    <br />
+    <br />
+    <ul nz-menu [nzMode]="mode ? 'vertical' : 'inline'" [nzTheme]="dark ? 'dark' : 'light'" style="width: 240px;">
+      <li nz-submenu>
+        <span title><i nz-icon type="mail"></i> Navigation One</span>
+        <ul>
+          <li nz-menu-group>
+            <span title>Item 1</span>
+            <ul>
+              <li nz-menu-item>Option 1</li>
+              <li nz-menu-item>Option 2</li>
+            </ul>
+          </li>
+          <li nz-menu-group>
+            <span title>Item 2</span>
+            <ul>
+              <li nz-menu-item>Option 3</li>
+              <li nz-menu-item>Option 4</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu>
+        <span title><i nz-icon type="appstore"></i> Navigation Two</span>
+        <ul>
+          <li nz-menu-item>Option 5</li>
+          <li nz-menu-item>Option 6</li>
+          <li nz-submenu>
+            <span title>Submenu</span>
+            <ul>
+              <li nz-menu-item>Option 7</li>
+              <li nz-menu-item>Option 8</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu>
+        <span title><i nz-icon type="setting"></i> Navigation Three</span>
+        <ul>
+          <li nz-menu-item>Option 9</li>
+          <li nz-menu-item>Option 10</li>
+          <li nz-menu-item>Option 11</li>
+        </ul>
+      </li>
+    </ul>
+
+    <br>
+    <hr>
+    <br>
+    <h3>Menu-Type-8</h3>
+
+    <ul nz-menu [nzMode]="'inline'" style="width: 240px;">
+      <ng-container *ngTemplateOutlet="menuTpl; context: { $implicit: menus }"></ng-container>
+      <ng-template #menuTpl let-menus>
+        <ng-container *ngFor="let menu of menus">
+          <li
+            nz-menu-item
+            [nzPaddingLeft]="menu.level * 24"
+            *ngIf="!menu.children"
+            [nzDisabled]="menu.disabled"
+            [nzSelected]="menu.selected"
+          >
+            <span title>
+              <i nz-icon [type]="menu.icon" *ngIf="menu.icon"></i>
+              <span>{{ menu.title }}</span>
+            </span>
+          </li>
+          <li
+            nz-submenu
+            [nzPaddingLeft]="menu.level * 24"
+            *ngIf="menu.children"
+            [nzOpen]="menu.open"
+            [nzDisabled]="menu.disabled"
+          >
+            <span title>
+              <i nz-icon [type]="menu.icon" *ngIf="menu.icon"></i>
+              <span>{{ menu.title }}</span>
+            </span>
+            <ul>
+              <ng-container *ngTemplateOutlet="menuTpl; context: { $implicit: menu.children }"></ng-container>
+            </ul>
+          </li>
+        </ng-container>
+      </ng-template>
+    </ul>
 </div>
