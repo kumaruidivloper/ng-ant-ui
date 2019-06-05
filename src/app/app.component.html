@@ -1,29 +1,213 @@
 <!-- NG-ZORRO -->
 <div class="wrapper-container">
-    <h3>ng-ant-Breadcrumb</h3>
-    <h3>Breadcrumb-Type1</h3>
-    <nz-breadcrumb>
-      <nz-breadcrumb-item>
-        Home
-      </nz-breadcrumb-item>
-      <nz-breadcrumb-item>
-        <a>Application List</a>
-      </nz-breadcrumb-item>
-      <nz-breadcrumb-item>
-        An Application
-      </nz-breadcrumb-item>
-    </nz-breadcrumb>
+    <h3>ng-ant-Dropdown</h3>
+    <h3>Dropdown Type-1</h3>
+    <nz-dropdown>
+      <a nz-dropdown> Hover me <i nz-icon type="down"></i> </a>
+      <ul nz-menu nzSelectable>
+        <li nz-menu-item>
+          <a>1st menu item</a>
+        </li>
+        <li nz-menu-item>
+          <a>2nd menu item</a>
+        </li>
+        <li nz-menu-item>
+          <a>3rd menu item</a>
+        </li>
+      </ul>
+    </nz-dropdown>
     <hr>
-    <h3>Breadcrumb-Type2</h3>
-    <nz-breadcrumb>
-      <nz-breadcrumb-item>
-        <i nz-icon type="home"></i>
-      </nz-breadcrumb-item>
-      <nz-breadcrumb-item>
-        <a><i nz-icon type="user"></i><span>Application List</span></a>
-      </nz-breadcrumb-item>
-      <nz-breadcrumb-item>
-        Application
-      </nz-breadcrumb-item>
-    </nz-breadcrumb>
+    <h3>Dropdown Type-2</h3>
+    <div>
+      <nz-dropdown [nzPlacement]="'bottomLeft'">
+        <button nz-button nz-dropdown>bottomLeft</button>
+        <ul nz-menu>
+          <li nz-menu-item>
+            <a>1st menu item length</a>
+          </li>
+          <li nz-menu-item>
+            <a>2nd menu item length</a>
+          </li>
+          <li nz-menu-item>
+            <a>3rd menu item length</a>
+          </li>
+        </ul>
+      </nz-dropdown>
+      <nz-dropdown [nzPlacement]="'bottomCenter'">
+        <button nz-button nz-dropdown>bottomCenter</button>
+        <ul nz-menu>
+          <li nz-menu-item>
+            <a>1st menu item length</a>
+          </li>
+          <li nz-menu-item>
+            <a>2nd menu item length</a>
+          </li>
+          <li nz-menu-item>
+            <a>3rd menu item length</a>
+          </li>
+        </ul>
+      </nz-dropdown>
+      <nz-dropdown [nzPlacement]="'bottomRight'">
+        <button nz-button nz-dropdown>bottomRight</button>
+        <ul nz-menu>
+          <li nz-menu-item>
+            <a>1st menu item length</a>
+          </li>
+          <li nz-menu-item>
+            <a>2nd menu item length</a>
+          </li>
+          <li nz-menu-item>
+            <a>3rd menu item length</a>
+          </li>
+        </ul>
+      </nz-dropdown>
+      <nz-dropdown [nzPlacement]="'topLeft'">
+        <button nz-button nz-dropdown>topLeft</button>
+        <ul nz-menu>
+          <li nz-menu-item>
+            <a>1st menu item length</a>
+          </li>
+          <li nz-menu-item>
+            <a>2nd menu item length</a>
+          </li>
+          <li nz-menu-item>
+            <a>3rd menu item length</a>
+          </li>
+        </ul>
+      </nz-dropdown>
+      <nz-dropdown [nzPlacement]="'topCenter'">
+        <button nz-button nz-dropdown>topCenter</button>
+        <ul nz-menu>
+          <li nz-menu-item>
+            <a>1st menu item length</a>
+          </li>
+          <li nz-menu-item>
+            <a>2nd menu item length</a>
+          </li>
+          <li nz-menu-item>
+            <a>3rd menu item length</a>
+          </li>
+        </ul>
+      </nz-dropdown>
+      <nz-dropdown [nzPlacement]="'topRight'">
+        <button nz-button nz-dropdown>topRight</button>
+        <ul nz-menu>
+          <li nz-menu-item>
+            <a>1st menu item length</a>
+          </li>
+          <li nz-menu-item>
+            <a>2nd menu item length</a>
+          </li>
+          <li nz-menu-item>
+            <a>3rd menu item length</a>
+          </li>
+        </ul>
+      </nz-dropdown>
+    </div>
+    <hr>
+    <h3>Dropdown Type-3</h3>
+    <nz-dropdown>
+      <a nz-dropdown> Hover me <i nz-icon type="down"></i> </a>
+      <ul nz-menu>
+        <li nz-menu-item>
+          <a>1st menu item</a>
+        </li>
+        <li nz-menu-item>
+          <a>2nd menu item</a>
+        </li>
+        <li nz-menu-divider></li>
+        <li nz-menu-item nzDisabled>3rd menu item（disabled）</li>
+      </ul>
+    </nz-dropdown>
+    <hr>
+    <h3>Dropdown Type-4</h3>
+    <nz-dropdown [nzTrigger]="'click'">
+      <a nz-dropdown> Click me <i nz-icon type="down"></i> </a>
+      <ul nz-menu>
+        <li nz-menu-item>1st menu item</li>
+        <li nz-menu-item>2nd menu item</li>
+        <li nz-menu-divider></li>
+        <li nz-menu-item nzDisabled>disabled menu item</li>
+        <li nz-submenu>
+          <span title>sub menu</span>
+          <ul>
+            <li nz-menu-item>3rd menu item</li>
+            <li nz-menu-item>4th menu item</li>
+          </ul>
+        </li>
+        <li nz-submenu nzDisabled>
+          <span title>disabled sub menu</span>
+          <ul>
+            <li nz-menu-item>3rd menu item</li>
+            <li nz-menu-item>4th menu item</li>
+          </ul>
+        </li>
+      </ul>
+    </nz-dropdown>
+    <hr>
+    <h3>Dropdown Type-5</h3>
+    <nz-dropdown>
+      <a nz-dropdown> Hover me, Click menu item <i nz-icon type="down"></i> </a>
+      <ul nz-menu>
+        <li nz-menu-item (click)="log('1st menu item')">1st menu item</li>
+        <li nz-menu-item (click)="log('2nd menu item')">2nd menu item</li>
+        <li nz-menu-item (click)="log('3rd menu item')">3rd menu item</li>
+      </ul>
+    </nz-dropdown>
+    <hr>
+    <h3>Dropdown Type-6</h3>
+    <div style="height: 28px;">
+      <nz-dropdown-button (nzClick)="log()">
+        DropDown
+        <ul nz-menu>
+          <li nz-menu-item>1st menu item</li>
+          <li nz-menu-item>2nd menu item</li>
+          <li nz-submenu>
+            <span title>sub menu</span>
+            <ul>
+              <li nz-menu-item>3rd menu item</li>
+              <li nz-menu-item>4th menu item</li>
+            </ul>
+          </li>
+        </ul>
+      </nz-dropdown-button>
+      <nz-dropdown-button nzDisabled>
+        DropDown
+        <ul nz-menu>
+          <li nz-menu-item>
+            <a>1st menu item</a>
+          </li>
+          <li nz-menu-item>
+            <a>2nd menu item</a>
+          </li>
+          <li nz-menu-item>
+            <a>3rd menu item</a>
+          </li>
+        </ul>
+      </nz-dropdown-button>
+      <nz-dropdown>
+        <button nz-button nz-dropdown><span>Button</span> <i nz-icon type="down"></i></button>
+        <ul nz-menu>
+          <li nz-menu-item>
+            <a>1st menu item</a>
+          </li>
+          <li nz-menu-item>
+            <a>2nd menu item</a>
+          </li>
+          <li nz-menu-item>
+            <a>3rd menu item</a>
+          </li>
+        </ul>
+      </nz-dropdown>
+    </div>
+    <hr>
+    <h3>Dropdown Type-7</h3>
+    <nz-dropdown [nzClickHide]="false" [(nzVisible)]="visible">
+      <a nz-dropdown> Hover me <i nz-icon type="down"></i> </a>
+      <ul nz-menu>
+        <li nz-menu-item>Clicking me will not close the menu.</li>
+        <li nz-menu-item>Clicking me will not close the menu also.</li>
+        <li nz-menu-item (click)="visible = false">Clicking me will close the menu</li>
+      </ul>
+    </nz-dropdown>
 </div>
